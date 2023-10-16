@@ -1,16 +1,28 @@
 import React from "react";
 import "./Footer.css";
 import { Fade } from "react-reveal";
-import { greeting } from "../../portfolio.js";
-/* eslint-disable jsx-a11y/accessible-emoji */
-
+import SocialMedia from "../../components/socialMedia/SocialMedia";
+import ContactIntfoFooter from "./ContactInfoFooter";
+import { contactInfo } from "../../portfolio";
 export default function Footer(props) {
   return (
     <div className="footer-div">
       <Fade>
-        <p className="footer-text" style={{ color: props.theme.secondaryText }}>
-          Made with <span role="img">❤️</span> by {greeting.title2}
-        </p>
+        <div className="footer-colect">
+          <div className="social-div">
+            <SocialMedia />
+          </div>
+
+          <ContactIntfoFooter
+            phone={contactInfo.phone}
+            email={contactInfo.email}
+            location={contactInfo.location}
+          />
+        </div>
+        <div className="copyright-div">
+          {" "}
+          <p class="copyright">© Driss HLAL 2023</p>
+        </div>
       </Fade>
     </div>
   );

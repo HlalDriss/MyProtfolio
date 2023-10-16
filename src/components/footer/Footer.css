@@ -2,9 +2,19 @@
   text-align: center;
   /* color: #868e96; */
   font-weight: bold;
+
   font-family: "Google Sans Regular";
 }
 
 .footer-div {
   margin-top: 2rem;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+.footer-colect {
+  text-align: center;
+  align-items: center;
+}
+.social-div {
+  text-align: center;
 }
